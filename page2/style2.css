@@ -1,0 +1,649 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Variables for Colors */
+:root {
+  --beaver: #9e7f66;
+  --cod-gray: #111111;
+  --mirage: #17192b;
+  --ebony-clay: #242b37;
+  --shuttle-gray: #5c6779;
+}
+/* Custom Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hidden Class */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Font Styles */
+.title {
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: var(--ebony-clay);
+}
+
+.text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.225px;
+  color: var(--ebony-clay);
+}
+
+/* Button Styles */
+.reserve-btn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#reserve-btn {
+  width: 245px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.btn {
+  width: 444px;
+  height: 64px;
+  padding-top: 18px;
+  border: 1px solid #111;
+  background-color: #111111;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: var(--cod-gray);
+}
+
+/* Header Styles */
+header {
+  height: 600px;
+  width: 100%;
+  background-image: url(../images/booking/hero-bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 65px 0 0 167px;
+}
+
+.header-text-container {
+  width: 445px;
+}
+
+.header-logo {
+  margin-bottom: 153px;
+}
+
+.header-title {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.header-text {
+  color: #ffffff;
+}
+/* End of Header Styles */
+
+/* Section Middle Styles */
+.section-middle {
+  height: 319px;
+  position: relative;
+  background-image: url(../images/patterns/pattern-curve-bottom-right.svg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+.section-middle::before {
+  content: "";
+  width: 160px;
+  height: 76px;
+  background-image: url(../images/patterns/pattern-lines.svg);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 655px;
+  top: 166px;
+}
+/* End of Section Middle Styles */
+
+/* Form Section Styles */
+.section-form {
+  width: 540px;
+  height: 560px;
+  background-color: #ffffff;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  position: absolute;
+  top: 258px;
+  right: 165px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+}
+
+/* Common Styles */
+input {
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  height: 45px;
+
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.225px;
+  color: #111111;
+}
+
+input::placeholder {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.225px;
+  color: #111111;
+  opacity: 0.5;
+}
+
+.error-message {
+  padding-top: 10px;
+  padding-left: 16px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: -0.125px;
+  color: #b54949;
+}
+
+.error-message-2 {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: -0.125px;
+  color: #b54949;
+}
+
+/* Name and Email Styles */
+.name-wrapper,
+.email-wrapper {
+  margin-bottom: 26px;
+}
+
+.name-input,
+.email-input {
+  width: 444px;
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.225px;
+  color: #111111;
+}
+
+/* Change Class for JS */
+.change .name-input::placeholder {
+  color: #b54949;
+}
+
+.change .name-input {
+  border-bottom: 1px solid #b54949;
+}
+
+.change .email-input::placeholder {
+  color: #b54949;
+}
+
+.change .email-input {
+  border-bottom: 1px solid #b54949;
+}
+
+/* Date and Time Styles */
+.date-wrapper,
+.time-wrapper {
+  display: flex;
+  width: 444px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.date-choice-wrapper,
+.time-choice-wrapper {
+  border: none;
+}
+
+.input-choice-numbers {
+  width: 80px;
+  padding-left: 16px;
+}
+
+.input-choice-middle {
+  margin: 0 16px;
+}
+
+.input-choice-long {
+  width: 97px;
+  padding-left: 16px;
+}
+
+/* AM PM Selection Styles */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-am-pm {
+  padding-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  height: 45px;
+  position: relative;
+
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.225px;
+  color: #111111;
+}
+
+option {
+  width: 106px;
+
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.225px;
+  color: #111111;
+}
+
+.input-am-pm::after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  background-image: url(../images/icons/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Change Class for JS Date and Time */
+.change .date-title {
+  color: #b54949;
+}
+
+.change .input-choice-numbers::placeholder {
+  color: #b54949;
+}
+
+.change .input-choice-numbers {
+  border-bottom: 1px solid #b54949;
+}
+
+.change .input-choice-long::placeholder {
+  color: #b54949;
+}
+
+.change .input-choice-long {
+  border-bottom: 1px solid #b54949;
+}
+
+/* Number of People Styles */
+.number-people-container {
+  width: 444px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #8e8e8e;
+}
+
+.number-people-minus {
+  width: 5.8px;
+  height: 2.38px;
+  cursor: pointer;
+}
+
+.number-people-plus {
+  width: 9.24px;
+  height: 9.24px;
+  cursor: pointer;
+}
+
+.number-people-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.225px;
+  color: #151515;
+}
+/* End of Form Section Styles */
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #111111;
+  height: 240px;
+  width: 100%;
+  padding-top: 78px;
+}
+
+.footer-logo {
+  width: 104px;
+  height: 40px;
+  margin-right: 192.58px;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-address,
+.footer-times {
+  margin-right: 124px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Media Queries */
+@media (max-width: 1176px) {
+  /* Footer - Media Queries */
+  .footer-times {
+    margin-right: 0;
+  }
+}
+
+/* Large Tablet Styles - Media Queries */
+@media (max-width: 1320px) {
+  /* Header Style - Media Queries */
+  header {
+    height: 600px;
+    background-image: url(../images/booking/hero-bg-tablet.jpg);
+    padding: 56px 40px 0 39px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .header-text-container {
+    width: 100%;
+  }
+
+  .header-logo {
+    margin-bottom: 64px;
+  }
+
+  .header-textbox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -0.6px;
+    margin-bottom: 16px;
+  }
+
+  .header-text {
+    width: 573px;
+  }
+
+  /* Section Middle - Media Queries */
+  .section-middle {
+    height: 435px;
+    background-image: none;
+  }
+
+  .section-middle::before {
+    content: "";
+    display: none;
+    visibility: hidden;
+  }
+
+  /* Section Booking Form - Media Queries */
+  .section-form {
+    top: 370px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  /* Footer - Media Queries */
+  .footer {
+    height: 328px;
+  }
+
+  .footer-logo {
+    margin-right: 129.58px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-address {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+/* Tablet Styles - Media Queries */
+@media (max-width: 768px) {
+  /* Footer - Media Queries */
+  .footer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 39px;
+    padding-top: 64px;
+  }
+}
+
+/* Small Tablet Styles - Media Queries */
+@media (max-width: 587px) {
+  /* Button Styles */
+  .reserve-btn {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .btn {
+    width: 263px;
+  }
+
+  /* Header Style - Media Queries */
+  header {
+    height: 600px;
+    background-image: url(../images/booking/hero-bg-tablet.jpg);
+    padding: 56px 0 0 0;
+    display: flex;
+  }
+
+  .header-text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-logo {
+    margin-bottom: 40px;
+  }
+
+  .header-text {
+    width: 380px;
+    margin-bottom: 24px;
+  }
+
+  .reserve-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Section Middle - Media Queries */
+  .section-middle {
+    height: 534px;
+    background-image: none;
+  }
+
+  /* Section Booking Form - Media Queries */
+  .section-form {
+    width: 327px;
+    height: 585px;
+    top: 463px;
+  }
+
+  .form-wrapper {
+    margin-top: 32px;
+  }
+
+  /* Name and Email - Media Queries */
+  .name-input,
+  .email-input {
+    width: 263px;
+  }
+
+  /* Date and Time - Media Queries */
+  .date-wrapper,
+  .time-wrapper {
+    width: 271px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .date-title-wrapper,
+  .time-title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .date-title,
+  .time-title {
+    margin-right: 10px;
+  }
+
+  .error-message-2 {
+    padding-top: 0;
+  }
+
+  .input-choice-numbers {
+    width: 73px;
+  }
+
+  .input-choice-middle {
+    margin: 0 14px 0 14px;
+  }
+
+  .input-choice-long {
+    width: 88px;
+  }
+
+  /* Number of People - Media Queries */
+  .number-people-container {
+    width: 263px;
+    padding: 0 19px;
+  }
+
+  /* Footer - Media Queries */
+  .footer {
+    height: 440px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 80px;
+  }
+
+  .footer-logo {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
+
+/* Mobile - Media Queries */
+@media (max-width: 375px) {
+  /* Header - Media Queries */
+  header {
+    background-image: url(../images/booking/hero-bg-mobile.jpg);
+  }
+
+  .header-title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    padding: 0;
+  }
+
+  .header-text {
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.1875px;
+    margin-bottom: 32px;
+  }
+}

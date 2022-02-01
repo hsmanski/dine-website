@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style2.css" />
+
+    <title>Frontend Mentor | Dine Website Challenge</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-text-container">
+        <a href="../index.html"
+          ><img src="../images/logo.svg" alt="dine logo" class="header-logo"
+        /></a>
+        <div class="header-textbox">
+          <h1 class="header-title">Reservations</h1>
+          <p class="header-text text">
+            We can’t wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We’ll be happy
+            to accommodate you.
+          </p>
+          <div class="btn-container">
+            <a
+              href="./page2/booking.html"
+              class="btn reserve-btn"
+              id="reserve-btn"
+              >Reserve Place</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-middle"></section>
+      <!-- Booking Form -->
+      <section class="section-form">
+        <form class="form-wrapper">
+          <!-- Name Input -->
+          <div class="name-wrapper">
+            <input type="text" class="name-input" placeholder="Name" />
+            <p class="error-message hidden">This feild is required</p>
+          </div>
+
+          <!-- Email Input -->
+          <div class="email-wrapper">
+            <input type="email" class="email-input" placeholder="Email" />
+            <p class="error-message hidden">This feild is required</p>
+          </div>
+
+          <!-- Date Input -->
+          <div class="date-wrapper">
+            <div class="date-title-wrapper">
+              <p class="date-title">Pick a date</p>
+              <p class="error-message-2 hidden">This feild is incomplete</p>
+            </div>
+            <fieldset class="date-choice-wrapper">
+              <input
+                type="number"
+                min="1"
+                max="12"
+                placeholder="MM"
+                class="input-choice-numbers"
+              />
+              <input
+                type="number"
+                min="1"
+                max="31"
+                placeholder="DD"
+                class="input-choice-numbers input-choice-middle"
+              />
+              <input
+                type="number"
+                min="2020"
+                max="2022"
+                placeholder="YYYY"
+                class="input-choice-numbers input-choice-long"
+              />
+            </fieldset>
+          </div>
+
+          <!-- Time Input -->
+          <div class="time-wrapper">
+            <div class="time-title-wrapper">
+              <p class="time-title">Pick a time</p>
+              <p class="error-message-2 hidden">This feild is incomplete</p>
+            </div>
+            <fieldset class="time-choice-wrapper">
+              <input
+                type="number"
+                min="1"
+                max="12"
+                placeholder="09"
+                class="input-choice-numbers"
+              />
+              <input
+                type="number"
+                min="01"
+                max="31"
+                placeholder="00"
+                class="input-choice-numbers input-choice-middle"
+              />
+              <select class="input-am-pm input-choice-long">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+              </select>
+            </fieldset>
+          </div>
+
+          <!-- Number of People -->
+          <div class="number-people-container">
+            <img
+              src="../images/icons/icon-minus.svg"
+              alt="minus symbol"
+              class="number-people-minus"
+            />
+            <p class="number-people-text">4 people</p>
+            <img
+              src="../images/icons/icon-plus.svg"
+              alt="plus symbol"
+              class="number-people-plus"
+            />
+          </div>
+
+          <!-- Form Button -->
+          <input type="submit" value="make reservation" class="btn" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="../index.html"
+        ><img src="../images/logo.svg" alt="dine logo" class="footer-logo"
+      /></a>
+      <div class="footer-content">
+        <div class="footer-address">
+          <div class="footer-text">Marthwaite, Sedbergh</div>
+          <div class="footer-text">Cumbria</div>
+          <div class="footer-text">+00 44 123 4567</div>
+        </div>
+        <div class="footer-times">
+          <div class="footer-text">Open Times</div>
+          <div class="footer-text">Mon - Fri: 09:00 AM - 10:00 PM</div>
+          <div class="footer-text">Sat - Sun: 09:00 AM - 11:30 PM</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
