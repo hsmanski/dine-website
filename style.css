@@ -129,7 +129,7 @@ header {
   background-image: url(./images/patterns/pattern-curve-top-right.svg);
   background-repeat: no-repeat;
   background-position-x: left;
-  background-position-y: 257px;
+  background-position-y: 255px;
 }
 
 .section-1b {
@@ -183,7 +183,7 @@ header {
 }
 
 .section-1b-textbox {
-  margin: 258px 125px 0 0;
+  margin: 250px 125px 0 0;
 }
 
 .section-1-divide {
