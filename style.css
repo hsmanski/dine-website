@@ -129,14 +129,14 @@ header {
   background-image: url(./images/patterns/pattern-curve-top-right.svg);
   background-repeat: no-repeat;
   background-position-x: left;
-  background-position-y: center;
+  background-position-y: 257px;
 }
 
 .section-1b {
   background-image: url(./images/patterns/pattern-curve-top-left.svg);
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: bottom;
+  background-position-y: 370px;
 }
 
 .section-1a-img {
@@ -183,7 +183,7 @@ header {
 }
 
 .section-1b-textbox {
-  margin: 200px 125px 0 0;
+  margin: 258px 125px 0 0;
 }
 
 .section-1-divide {
@@ -242,6 +242,7 @@ header {
 .section-2-img {
   width: 128px;
   height: 96px;
+  margin-top: 5px;
 }
 
 .section-2-img-1 {
@@ -343,6 +344,7 @@ header {
 .section-3-content-wrapper {
   width: 445px;
   margin-left: 125px;
+  padding-top: 16px;
 }
 
 .section-3-content-title {
