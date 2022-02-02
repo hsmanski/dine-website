@@ -234,11 +234,11 @@ input::placeholder {
   border-bottom: 1px solid #b54949;
 }
 
-.change .email-input::placeholder {
+.change-email .email-input::placeholder {
   color: #b54949;
 }
 
-.change .email-input {
+.change-email .email-input {
   border-bottom: 1px solid #b54949;
 }
 
@@ -324,6 +324,10 @@ option {
   color: #b54949;
 }
 
+.change .time-title {
+  color: #b54949;
+}
+
 .change .input-choice-numbers::placeholder {
   color: #b54949;
 }
@@ -344,6 +348,7 @@ option {
 .number-people-container {
   width: 444px;
   height: 45px;
+  padding: 0 31px;
   display: flex;
   justify-content: space-between;
   align-items: center;

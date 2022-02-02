@@ -43,24 +43,47 @@
       <section class="section-middle"></section>
       <!-- Booking Form -->
       <section class="section-form">
-        <form class="form-wrapper">
+        <form
+          name="reservationForm"
+          class="form-wrapper"
+          onsubmit="return validateForm()"
+          autocomplete="off"
+        >
           <!-- Name Input -->
-          <div class="name-wrapper">
-            <input type="text" class="name-input" placeholder="Name" />
-            <p class="error-message hidden">This feild is required</p>
+          <div class="name-wrapper" id="name-wrapper">
+            <input
+              type="text"
+              class="name-input"
+              placeholder="Name"
+              name="name"
+              id="name"
+            />
+            <p class="error-message hidden" id="error-name">
+              This feild is required
+            </p>
           </div>
 
           <!-- Email Input -->
-          <div class="email-wrapper">
-            <input type="email" class="email-input" placeholder="Email" />
-            <p class="error-message hidden">This feild is required</p>
+          <div class="email-wrapper" id="email-wrapper">
+            <input
+              type="text"
+              class="email-input"
+              placeholder="Email"
+              name="email"
+              id="email"
+            />
+            <p class="error-message hidden" id="error-email">
+              This feild is required
+            </p>
           </div>
 
           <!-- Date Input -->
-          <div class="date-wrapper">
+          <div class="date-wrapper" id="date-wrapper">
             <div class="date-title-wrapper">
               <p class="date-title">Pick a date</p>
-              <p class="error-message-2 hidden">This feild is incomplete</p>
+              <p class="error-message-2 hidden" id="error-date">
+                This feild is incomplete
+              </p>
             </div>
             <fieldset class="date-choice-wrapper">
               <input
@@ -69,6 +92,7 @@
                 max="12"
                 placeholder="MM"
                 class="input-choice-numbers"
+                id="month"
               />
               <input
                 type="number"
@@ -76,6 +100,7 @@
                 max="31"
                 placeholder="DD"
                 class="input-choice-numbers input-choice-middle"
+                id="day"
               />
               <input
                 type="number"
@@ -83,15 +108,18 @@
                 max="2022"
                 placeholder="YYYY"
                 class="input-choice-numbers input-choice-long"
+                id="year"
               />
             </fieldset>
           </div>
 
           <!-- Time Input -->
-          <div class="time-wrapper">
+          <div class="time-wrapper" id="time-wrapper">
             <div class="time-title-wrapper">
               <p class="time-title">Pick a time</p>
-              <p class="error-message-2 hidden">This feild is incomplete</p>
+              <p class="error-message-2 hidden" id="error-time">
+                This feild is incomplete
+              </p>
             </div>
             <fieldset class="time-choice-wrapper">
               <input
@@ -100,6 +128,7 @@
                 max="12"
                 placeholder="09"
                 class="input-choice-numbers"
+                id="hour"
               />
               <input
                 type="number"
@@ -107,6 +136,7 @@
                 max="31"
                 placeholder="00"
                 class="input-choice-numbers input-choice-middle"
+                id="minute"
               />
               <select class="input-am-pm input-choice-long">
                 <option value="am">AM</option>
@@ -131,7 +161,11 @@
           </div>
 
           <!-- Form Button -->
-          <input type="submit" value="make reservation" class="btn" />
+          <input
+            type="submit"
+            value="make reservation"
+            class="btn reservation-btn"
+          />
         </form>
       </section>
     </main>
@@ -153,5 +187,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script2.js"></script>
   </body>
 </html>
