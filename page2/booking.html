@@ -29,10 +29,7 @@
             to accommodate you.
           </p>
           <div class="btn-container">
-            <a
-              href="./page2/booking.html"
-              class="btn reserve-btn"
-              id="reserve-btn"
+            <a href="#" class="btn reserve-btn" id="reserve-btn"
               >Reserve Place</a
             >
           </div>
@@ -73,7 +70,7 @@
               id="email"
             />
             <p class="error-message hidden" id="error-email">
-              This feild is required
+              Please use a valid email address
             </p>
           </div>
 
@@ -81,9 +78,14 @@
           <div class="date-wrapper" id="date-wrapper">
             <div class="date-title-wrapper">
               <p class="date-title">Pick a date</p>
-              <p class="error-message-2 hidden" id="error-date">
-                This feild is incomplete
-              </p>
+              <div class="error-wrapper">
+                <p class="error-message-2 hidden" id="error-date">
+                  This feild is incomplete
+                </p>
+                <p class="error-message-2 hidden" id="error-past-date">
+                  Date must be in future
+                </p>
+              </div>
             </div>
             <fieldset class="date-choice-wrapper">
               <input
@@ -104,8 +106,8 @@
               />
               <input
                 type="number"
-                min="2020"
-                max="2022"
+                min=""
+                max=""
                 placeholder="YYYY"
                 class="input-choice-numbers input-choice-long"
                 id="year"
@@ -151,14 +153,23 @@
               src="../images/icons/icon-minus.svg"
               alt="minus symbol"
               class="number-people-minus"
+              id="minus"
+              onclick="totalClick(-1)"
             />
-            <p class="number-people-text">4 people</p>
+            <p class="number-people-text">
+              <span id="num-people">4</span> people
+            </p>
             <img
               src="../images/icons/icon-plus.svg"
               alt="plus symbol"
               class="number-people-plus"
+              id="plus"
+              onclick="totalClick(1)"
             />
           </div>
+          <p class="error-message-3 hidden" id="error-num-people">
+            Sorry we can not accommodate parties larger than 30
+          </p>
 
           <!-- Form Button -->
           <input
